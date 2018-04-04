@@ -24,7 +24,8 @@ class Combiner:
     @staticmethod
     def generate_row(stat_val: [], calls_val: []) -> tuple:
         """Создает и возвращает строку"""
-        return calls_val[0], stat_val[0], stat_val[1], stat_val[3], stat_val[2]
+
+        return calls_val[0], str(stat_val[0])[1:], stat_val[1], stat_val[3]
 
     @staticmethod
     def log_rows_info(total: int, unread: []):
